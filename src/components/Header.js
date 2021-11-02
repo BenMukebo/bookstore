@@ -14,7 +14,7 @@ const Header = () => (
           </Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-item-link" to="/calculator">
+          <Link className="nav-item-link" to="/categories">
             CATEGORIES
           </Link>
         </li>
