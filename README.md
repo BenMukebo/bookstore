@@ -1,7 +1,7 @@
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Math magicians
+# Bookstore
 
 ## Description
 
@@ -16,7 +16,7 @@
 - Understand the concept of state management.
 - Use store, actions and reducers in React.
 - Connect React and Redux.
-- 
+ 
 ### Built With
 
 - React
