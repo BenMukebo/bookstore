@@ -1,70 +1,150 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-## Available Scripts
+# Bookstore
 
-In the project directory, you can run:
+## Description
 
-### `npm start`
+- Book Store is a website that allows you to    
+  - Display a list of books,
+  - Add a book,
+  - Remove a selected book.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Learning objectives
 
-### `npm test`
+- Understand the concept of state management.
+- Use store, actions and reducers in React.
+- Connect React and Redux.
+ 
+### Built With
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React
+- Redux
 
-### `npm run build`
+## Live Link
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### []()
+
+
+## Getting Started
+
+### Clone this repository
+
+- To get the content of this project locally you need to run this command in your terminal:
+
+```bash
+$ https://github.com/BenMukebo/bookstore.git
+$ cd bookstore
+```
+### Run project
+
+- After cloning the project you need to run this command
+
+```bash
+$ npm run start 
+```
+
+- Initialise React app.
+
+```bash
+$ npx create-react-app bookstore  
+```
+
+
+- Add React Redux.
+
+```bash
+$ npm install react-redux
+```
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+- Setup React Router
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+$ npm install react-router-dom 
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+> To use the Router component provided to wrap your components and associate them with a path.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+-  Compiled SASS to CSS:
+  
+```bash
+$  sass --watch src/scss/App.scss src/css/App.css
+```
 
-## Learn More
+To watch and output to directories by using folder paths as your input and output
 
+### Learn More
+ 
+  > This command will download all the dependancies of the project
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+
+## Run Tests
+
+ npm i @testing-library/jest-dom   
+ npm install --save-dev @testing-library/jest-dom
+
+```bash
+$ npm install @testing-library/react react-test-renderer jest-dom --save-dev
+```
+
+
+### Learn More
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+For tracking linter errors locally you need to follow these steps:
+
+
+- For tracking the linter errors in HTML file run:
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
 ### Code Splitting
+- For tracking the linter errors in CSS file run:
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
+  > `npx stylelint "\*_/_.{css,scss}"`
 ### Analyzing the Bundle Size
+- And For tracking the linter errors in JavaScript file run:
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
+  > `npx eslint .`
 ### Making a Progressive Web App
+- Use `npm run build` to run the app in live server
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
+- `npm run build` fails to minify
+### Show your support
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Author
+
+👤 **Ben Mukebo**
+
+- GitHub: [@BenMukebo](https://github.com/BenMukebo)
+- Twitter [@BenMukebo](https://twitter.com/BenMukebo)
+- LinkedIn [BenMukebo](https://www.linkedin.com/in/kasongo-mukebo-ben-591720205/)
+
+## :handshake: Contributing
+
+Feel free to check the [issues page](https://github.com/BenMukebo/bookstore/issues)
+
+Give a :star: if you like this project! ❤️❤️❤️
+
+## Acknowledgments
+
+- Thanks to everyone who will get time to check this code especially to code reviewers.
+
+## 📝 License
+
+This project is [MIT](https://github.com/microverseinc/readme-template/blob/master/MIT.md) licensed.
