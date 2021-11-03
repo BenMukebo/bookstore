@@ -9,6 +9,9 @@
   - Display a list of books,
   - Add a book,
   - Remove a selected book.
+- Understand the concept of state management.
+- Use store, actions and reducers in React.
+- Connect React and Redux.
 
 
 ## Learning objectives
@@ -85,12 +88,6 @@ $ npm i --save redux-logger
 
 ```bash
 $ C:\Users\Your Name\bookstore > npm i uuid
-```
-
--  Compiled SASS to CSS:
-  
-```bash
-$  sass --watch src/scss/App.scss src/css/App.css
 ```
 
 To watch and output to directories by using folder paths as your input and output
