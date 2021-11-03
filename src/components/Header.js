@@ -1,4 +1,5 @@
 import React from 'react';
+import { ImUser } from 'react-icons/im';
 import { Link } from 'react-router-dom';
 
 const Header = () => (
@@ -14,6 +15,7 @@ const Header = () => (
         </li>
       </ul>
     </nav>
+    <ImUser />
   </>
 );
 

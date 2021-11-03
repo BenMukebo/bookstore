@@ -6,8 +6,10 @@ const BooksPage = () => (
       <h2>Book List</h2>
       <button type="button">Remove</button>
     </div>
-    <input type="text" name="addBooks" placeholder="Book Title" />
-    <button type="button">Add Book</button>
+    <form onSubmit={(e) => e.preventDefault()}>
+      <input type="text" name="addBooks" placeholder="Book Title" />
+      <button type="button">Add Book</button>
+    </form>
   </>
 );
 
