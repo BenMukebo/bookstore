@@ -5,7 +5,7 @@ import AddBook from './addBook';
 
 function BooksPage() {
   const books = useSelector((state) => state.booksReducer);
-  console.log(books);
+  // console.log(books);
 
   return (
     <div style={{ background: '#f5f6fa' }}>
