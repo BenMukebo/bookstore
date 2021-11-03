@@ -61,6 +61,11 @@ $ npm install react-redux
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
+- Install react-icons
+  
+```bash
+$ npm install react-icons --save # run this command in your project directory:
+```
 
 - Setup React Router
 
@@ -70,6 +75,17 @@ $ npm install react-router-dom
 ```
 
 > To use the Router component provided to wrap your components and associate them with a path.
+
+- To configuring the Redux Store and importing the necessary methods from Redux
+
+```bash
+$ npm i --save redux-logger
+```
+- Generating random ids
+
+```bash
+$ C:\Users\Your Name\bookstore > npm i uuid
+```
 
 -  Compiled SASS to CSS:
   

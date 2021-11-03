@@ -1,8 +1,8 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import BooksPage from '../redux/books/books';
-import CategoriesPage from '../redux/categories/categories';
 import Header from './Header';
+import BooksPage from './BooksPage';
+import CategoriesPage from '../redux/categories/categories';
 
 const App = () => (
   <>
@@ -11,7 +11,7 @@ const App = () => (
       <Route exact path="/">
         <BooksPage />
       </Route>
-      <Route exact path="/categories">
+      <Route path="/categories">
         <CategoriesPage />
       </Route>
     </Switch>
