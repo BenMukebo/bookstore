@@ -12,9 +12,18 @@ const Book = ({
     dispatch(removeBook(id));
   };
   return (
-    <section>
+    <section style={{
+      width: '100%',
+      height: '17rem',
+      display: 'flex',
+      justifyContent: 'space-around',
+      alignItems: 'center',
+      background: '#ffff',
+      margin: '0.5rem',
+    }}
+    >
       <div>
-        <span>{genre}</span>
+        <span style={{ color: '#121212' }}>{genre}</span>
         <h2>{title}</h2>
         <p>{author}</p>
         <ul>
