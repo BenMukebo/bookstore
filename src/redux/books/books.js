@@ -5,6 +5,7 @@ import { v4 as uuidv4 } from 'uuid';
 const ADD_BOOK = 'bookStore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
 
+// const initialState = [];
 const initialState = [
   {
     id: uuidv4(),
@@ -54,13 +55,10 @@ const reducer = (state = initialState, action) => {
         },
       ];
     case REMOVE_BOOK:
-      /*
-          use ES6 filter() method to create a new array, which will not contain the book you want to remove from the store (filter by the id key - i.e.:
-          return state.filter(book => book.id !== id);
-          */
+      /* return state.filter(book => book.id !== id);  */
+      return state.filter((book) => book.id !== action.payload);
 
-    default:
-      return state;
+    default: return state;
   }
 };
 
