@@ -1,15 +1,11 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-// import { useEffect } from 'react';
 import Book from './Book';
 import AddBook from './addBook';
 
 function BooksPage() {
   const books = useSelector((state) => state.booksReducer);
-
-  if (!books) {
-    return <div>no Books</div>;
-  }
+  console.log(books);
 
   return (
     <div style={{ background: '#f5f6fa' }}>
@@ -18,7 +14,7 @@ function BooksPage() {
           <Book
             key={book.id}
             id={book.id}
-            genre={book.genre} // guestion2
+            genre={book.category}
             title={book.title}
             author={book.author}
             completed={book.completed}

@@ -1,10 +1,9 @@
-// const APP_ID = '9oGCGsuz2srGR7ssHMEo';
-const BASE_URL = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/9oGCGsuz2srGR7ssHMEo';
+const BASE_URL = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/9oGCGsuz2srGR7ssHMEo';
 
-export const createBook = async ({ id, title, category }) => {
+export const postBook = async ({ itemId, title, category }) => {
   const url = `${BASE_URL}/books`;
   const data = JSON.stringify({
-    item_id: id,
+    item_id: itemId,
     title,
     category,
   });
@@ -13,7 +12,7 @@ export const createBook = async ({ id, title, category }) => {
     headers: {
       'Content-Type': 'application/json',
     },
-    data,
+    body: data,
   });
   return response.text();
 };
@@ -28,7 +27,18 @@ export const deleteBook = async (id) => {
     headers: {
       'Content-Type': 'application/json',
     },
-    data,
+    body: data,
   });
   return response.text();
+};
+
+export const displayBooks = async () => {
+  const url = `${BASE_URL}/books`;
+  const response = await fetch(url, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  });
+  return response.json();
 };
