@@ -19,3 +19,17 @@ export const createBook = async ({ id, title, category }) => { //POST
   return response.text();
 };
 
+export const deleteBook = async (id) => {
+  const url = `${BASE_URL}/books/${id}`;
+  const data = JSON.stringify({
+    item_id: id,
+  });
+  const response = await fetch(url, {
+    method: 'DELETE',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    data,
+  });
+  return response.text();
+};
