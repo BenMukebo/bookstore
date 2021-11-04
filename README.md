@@ -12,6 +12,10 @@
 - Understand the concept of state management.
 - Use store, actions and reducers in React.
 - Connect React and Redux.
+- Understand the concept of state management.
+- Use store, actions and reducers in React.
+- Connect React and Redux.
+- Connect an existing API via Redux and use the data to - display something in a UI.
 
 
 ## Learning objectives
@@ -90,6 +94,13 @@ $ npm i --save redux-logger
 $ npm i uuid
 ```
 
+- Redux Toolkit
+  
+> If you're using the basic Redux createStore API and need to set this up manually, first add the redux-thunk package:
+
+```bash
+$ npm install redux-thunk
+```
 
 
 
