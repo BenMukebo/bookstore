@@ -9,6 +9,9 @@
   - Display a list of books,
   - Add a book,
   - Remove a selected book.
+- Understand the concept of state management.
+- Use store, actions and reducers in React.
+- Connect React and Redux.
 
 
 ## Learning objectives
@@ -61,6 +64,11 @@ $ npm install react-redux
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
+- Install react-icons
+  
+```bash
+$ npm install react-icons --save # run this command in your project directory:
+```
 
 - Setup React Router
 
@@ -71,39 +79,19 @@ $ npm install react-router-dom
 
 > To use the Router component provided to wrap your components and associate them with a path.
 
--  Compiled SASS to CSS:
-  
+- To configuring the Redux Store and importing the necessary methods from Redux
+
 ```bash
-$  sass --watch src/scss/App.scss src/css/App.css
+$ npm i --save redux-logger
 ```
-
-To watch and output to directories by using folder paths as your input and output
-
-### Learn More
- 
-  > This command will download all the dependancies of the project
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-
-## Run Tests
-
- npm i @testing-library/jest-dom   
- npm install --save-dev @testing-library/jest-dom
+- Generating random ids
 
 ```bash
-$ npm install @testing-library/react react-test-renderer jest-dom --save-dev
+$ npm i uuid
 ```
 
 
-### Learn More
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-For tracking linter errors locally you need to follow these steps:
-
-
-- For tracking the linter errors in HTML file run:
-
-To learn React, check out the [React documentation](https://reactjs.org/).
 
 ### Code Splitting
 - For tracking the linter errors in CSS file run:
