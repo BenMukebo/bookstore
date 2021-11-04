@@ -1,10 +1,15 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+// import { useEffect } from 'react';
 import Book from './Book';
 import AddBook from './addBook';
 
 function BooksPage() {
   const books = useSelector((state) => state.booksReducer);
+
+  if (!books) {
+    return <div>no Books</div>;
+  }
 
   return (
     <div style={{ background: '#f5f6fa' }}>

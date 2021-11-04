@@ -1,25 +1,29 @@
-
 import { createBook, deleteBook } from '../../components/Api';
 
-
 const ADD_BOOK = 'bookStore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
 
-import { v4 as uuidv4 } from 'uuid';
+// import { v4 as uuidv4 } from 'uuid';
 
-const ADD_BOOK = 'bookStore/books/ADD_BOOK';
-const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
+export const addBook = (payload) => async (dispatch) => {
+  await createBook({
+    itemId: payload.id,
+    title: payload.title,
+    category: payload.genre,
+  });
+  dispatch({
+    type: ADD_BOOK,
+    payload,
+  });
+};
 
-
-export const addBook = (payload) => ({
-  type: ADD_BOOK,
-  payload,
-});
-
-export const removeBook = (payload) => ({
-  type: REMOVE_BOOK,
-  payload,
-});
+export const removeBook = (payload) => async (dispatch) => {
+  await deleteBook(payload);
+  dispatch({
+    type: REMOVE_BOOK,
+    payload,
+  });
+};
 
 const reducer = (state = [], action) => {
   switch (action.type) {
@@ -31,7 +35,7 @@ const reducer = (state = [], action) => {
           id: action.payload.id,
           title: action.payload.title,
           // author: action.payload.author,
-          // completed: 0,
+          completed: 0,
           genre: action.payload.genre,
         },
       ];
