@@ -52,9 +52,13 @@ const Book = ({
 Book.propTypes = {
   id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  author: PropTypes.string.isRequired,
+  author: PropTypes.string,
   genre: PropTypes.string.isRequired,
-  completed: PropTypes.number.isRequired,
+  completed: PropTypes.number,
+};
+Book.defaultProps = {
+  author: '',
+  completed: 0,
 };
 
 export default Book;
