@@ -1,0 +1,47 @@
+:root {
+  --white-backg: #fff;
+  --blue-color: #0290ff;
+  --back-color: #121212;
+  --size-small: 0.85rem;
+}
+
+@mixin d-flex($position) {
+  display: flex;
+  align-items: center;
+  justify-content: $position;
+}
+
+
+.header {
+  width: 100%;
+  // background-color: var(--white-backg);
+  @include d-flex(space-around);
+
+  background-color: #ccc;
+}
+
+.nav {
+  @include d-flex(space-around);
+
+  h1 {
+    font-size: 1.9rem;
+    color: var(--blue-color)
+  }
+
+  .items {
+    @include d-flex(center);
+    list-style-type: none;
+  }
+
+  li{
+    padding: 0.5rem;
+    margin: 0 2px;
+  
+    .itemLink {
+      font-size: 0.8rem;
+      letter-spacing: 1.9px;
+      color: var(--back-color);
+      text-decoration: none;
+    }
+  }
+}
