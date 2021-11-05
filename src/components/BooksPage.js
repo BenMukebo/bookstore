@@ -13,7 +13,7 @@ function BooksPage() {
           <Book
             key={book.id}
             id={book.id}
-            genre={book.genre} // guestion2
+            genre={book.category}
             title={book.title}
             author={book.author}
             completed={book.completed}

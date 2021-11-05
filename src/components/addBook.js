@@ -13,7 +13,7 @@ const AddBook = () => {
   const addNewBook = () => {
     if (!title || !author || !genre) return;
     const newBook = {
-      genre,
+      category: genre,
       title,
       author,
       id: uuidv4(),
