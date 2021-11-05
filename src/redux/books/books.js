@@ -44,10 +44,8 @@ const reducer = (state = [], action) => {
       return [
         ...state,
         {
-          // id: uuidv4(),
           id: action.payload.id,
           title: action.payload.title,
-          // author: action.payload.author,
           completed: 0,
           category: action.payload.category,
         },
