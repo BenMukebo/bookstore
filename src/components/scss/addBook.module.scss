@@ -30,6 +30,8 @@
 
   input {
     @extend %boder-properties;
+
+    width: 55%;
     border: var(--border-size);
     padding: 0.4rem 0.7rem;
     margin: calc(0.2rem + 0.3rem) 0;
@@ -46,13 +48,18 @@
     }
   }
 
+  .hide {
+    display: none;
+  }
+
   select {
     @extend input;
 
+    width: 15%;
     background-color: transparent;
 
     option {
-      color: var(--white-backg) !important;
+      color: var(--black-color);
     }
   }
 

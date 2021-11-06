@@ -2,6 +2,7 @@
 
 .bookSection {
   @include d-flex(space-between);
+
   @extend %boder-properties;
 
   background-color: var(--white-backg);

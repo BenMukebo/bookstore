@@ -44,8 +44,8 @@ const AddBook = () => {
           placeholder="Book auther"
           onChange={(e) => setAuthor(e.target.value)}
           value={author}
-          required
-          style={{ dispaly: 'none' }}
+          // required
+          className={styles.hide}
         />
         <select name="genre" value={genre} onChange={(e) => setGenre(e.target.value)}>
           <option hidden value="category"> Category </option>
