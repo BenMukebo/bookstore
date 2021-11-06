@@ -9,6 +9,16 @@
   - Display a list of books,
   - Add a book,
   - Remove a selected book.
+  
+||             Bookstore         ||
+|-|-----------------------------------|-|
+||![screenshot](./src/img/screenshot.png)||
+
+## Learning objectives
+
+- Understand the concept of state management.
+- Use store, actions and reducers in React.
+- Connect React and Redux.
 - Understand the concept of state management.
 - Use store, actions and reducers in React.
 - Connect React and Redux.
@@ -16,13 +26,6 @@
 - Use store, actions and reducers in React.
 - Connect React and Redux.
 - Connect an existing API via Redux and use the data to - display something in a UI.
-
-
-## Learning objectives
-
-- Understand the concept of state management.
-- Use store, actions and reducers in React.
-- Connect React and Redux.
  
 ### Built With
 

@@ -7,7 +7,11 @@ function BooksPage() {
   const books = useSelector((state) => state.booksReducer);
 
   return (
-    <div style={{ background: '#f5f6fa' }}>
+    <div style={{
+      backgroundColor: '#fafafa;',
+      padding: '0 5%',
+    }}
+    >
       <ul>
         {books.map((book) => (
           <Book

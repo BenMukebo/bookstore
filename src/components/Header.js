@@ -1,27 +1,24 @@
 import React from 'react';
 import { ImUser } from 'react-icons/im';
 import { Link } from 'react-router-dom';
-
-const headerStyle = {
-  display: 'flex',
-  justifyContent: 'space-around',
-  alignItems: 'center',
-};
+import styles from './scss/Header.module.scss';
 
 const Header = () => (
-  <div style={headerStyle}>
-    <nav style={headerStyle}>
+  <div className={styles.header}>
+    <nav className={styles.nav}>
       <h1>Bookstore</h1>
-      <ul style={headerStyle}>
-        <li>
-          <Link to="/">BOOKS</Link>
+      <ul className={styles.items}>
+        <li className={styles.item}>
+          <Link className={styles.itemLink} to="/">BOOKS</Link>
         </li>
-        <li>
-          <Link to="/categories">CATEGORIES</Link>
+        <li className={styles.item}>
+          <Link className={styles.itemLink} to="/categories">CATEGORIES</Link>
         </li>
       </ul>
     </nav>
-    <ImUser />
+    <div className={styles.icon}>
+      <ImUser className={styles.user} />
+    </div>
   </div>
 );
 

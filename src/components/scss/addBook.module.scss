@@ -1,0 +1,83 @@
+@import 'config';
+
+.AddSection {
+  &::before {
+    content: '';
+    display: block;
+    height: 0.125rem;
+    width: 100%;
+    margin-top: 2.5rem;
+    margin-bottom: 1.8rem;
+    background-color: #e8e8e8;
+  }
+}
+
+.title {
+  h2 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #888;
+  }
+}
+
+.form {
+  @include d-flex(space-between);
+
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 1rem 0;
+  margin-bottom: 5rem;
+
+  input {
+    @extend %boder-properties;
+
+    width: 55%;
+    border: var(--border-size);
+    padding: 0.4rem 0.7rem;
+    margin: calc(0.2rem + 0.3rem) 0;
+
+    &::placeholder {
+      color: #c4c4c4;
+      font-size: 1rem;
+      border-radius: 3.8px;
+      box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+    }
+
+    &:hover {
+      border-color: var(--blue-color);
+    }
+  }
+
+  .hide {
+    display: none;
+  }
+
+  select {
+    @extend input;
+
+    width: 15%;
+    background-color: transparent;
+
+    option {
+      color: var(--black-color);
+    }
+  }
+
+  button {
+    letter-spacing: 0.5px;
+    color: var(--white-backg);
+    background-color: var(--blue-color);
+    // margin: 1.188rem 2.125rem;
+    padding: 0.8rem 1.375rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 3px;
+    text-align: center;
+    transition: all 0.5s ease;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+  }
+}

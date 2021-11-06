@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  //   font-family: $font-stack;
+}
+
+:root {
+  --white-backg: #fff;
+  --blue-color: #0290ff;
+  --blue-blur: #4386bf;
+  --back-color: #121212;
+  --size-small: 0.85rem;
+  --border-size: 1px solid #e8e8e8;
+}
+
+@mixin d-flex($position) {
+  display: flex;
+  align-items: center;
+  justify-content: $position;
+}
+
+%boder-properties {
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+  border: var(--border-size);
+  border-radius: 4px;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}

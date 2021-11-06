@@ -1,0 +1,68 @@
+@import 'config';
+
+.header {
+  @include d-flex(space-between);
+
+  @extend %boder-properties;
+
+  height: 5.8rem;
+  padding: 0 5%;
+  background-color: var(--white-backg);
+  margin: 0 auto 1.8rem;
+}
+
+.nav {
+  @include d-flex(space-between);
+
+  h1 {
+    font-size: 1.9rem;
+    color: var(--blue-color);
+    padding-right: 1.6rem;
+  }
+
+  .items {
+    @include d-flex(center);
+
+    list-style-type: none;
+  }
+
+  li {
+    padding: 1.2rem;
+    margin: 0 2px;
+
+    .itemLink {
+      font-size: 0.8rem;
+      letter-spacing: 1.9px;
+      color: var(--back-color);
+      text-decoration: none;
+    }
+
+    &:last-child .itemLink {
+      color: rgba(71, 67, 67, 0.603);
+    }
+  }
+}
+
+.icon {
+  @extend %boder-properties;
+
+  width: 2.8rem;
+  height: 2.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  border: var(--border-size);
+  border-radius: 50%;
+  // box-shadow: 0 0 0 1px rgb(91, 158, 245, 0.3);
+  transition: box-shadow 120ms;
+  cursor: pointer;
+
+  .user {
+    color: var(--blue-color);
+  }
+}
+
+.icon:hover {
+  // box-shadow: 0 0 0 2px rgb(91, 158, 245, 0.3);
+}
