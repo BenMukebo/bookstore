@@ -2,22 +2,24 @@
 
 .header {
   @include d-flex(space-between);
+  height: 5.8rem;
   // width: 90%;
   // padding: 0 6.2rem;
   padding: 0 5%;
-  background-color: var(--white-backg);
+  // background-color: var(--white-backg);
   margin: 0 auto 1.8rem;
 
-  // background-color: #ccc;
+  background-color: #ccc;
 }
 
 .nav {
-  @include d-flex(space-around);
-  padding: 0 1rem;
-
+  @include d-flex(space-between);
+  background-color: red;
+  
   h1 {
     font-size: 1.9rem;
-    color: var(--blue-color)
+    color: var(--blue-color);
+    padding-right: 1.6rem;
   }
 
   .items {
@@ -26,7 +28,7 @@
   }
 
   li{
-    padding: 0.5rem;
+    padding: 1.2rem;
     margin: 0 2px;
   
     .itemLink {
