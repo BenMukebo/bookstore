@@ -4,7 +4,6 @@
   @include d-flex(space-between);
   background-color: var(--white-backg);
   height: 10.6rem;
-  padding: 0 5%;
   margin: 0.5rem auto;
 //   background-color: aqua;
 }
@@ -12,7 +11,6 @@
 .article {
   span {
     color: var(--back-color);
-    margin: 0 2.438rem 0 0;
     font-family: Montserrat;
     font-size: 0.875rem;
     font-weight: bold;  
@@ -23,7 +21,7 @@
     // width: 12.313rem;
     color: var(--back-color);
     height: 1.813rem;
-    margin: 0.188rem 20.188rem 0 0;
+    margin-top: 0.188rem;
     font-family: RobotoSlab;
     font-size: 1.4rem;
     font-weight: bold;
@@ -74,5 +72,5 @@
     &:nth-child(3) button {
         padding-left: 0.9rem;
       }
-}
+  }
 }
