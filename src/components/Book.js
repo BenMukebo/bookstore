@@ -19,9 +19,9 @@ const Book = ({
         <h2>{title}</h2>
         {/* <p>{author}</p> */}
         <ul>
-          <li><button type="button">Comments</button></li>
-          <li><button type="button" onClick={handleRemove}>Remove</button></li>
-          <li><button type="button">Edit</button></li>
+          <li className={styles.btn}><button type="button">Comments</button></li>
+          <li className={styles.btn}><button type="button" onClick={handleRemove}>Remove</button></li>
+          <li className={styles.btn}><button type="button">Edit</button></li>
         </ul>
       </div>
       <article>
