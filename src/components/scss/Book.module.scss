@@ -1,0 +1,128 @@
+@import 'config';
+
+.bookSection {
+  @include d-flex(space-between);
+  background-color: var(--white-backg);
+  height: 10.6rem;
+  margin: 0.5rem auto;
+  // background-color: red;
+  border: var(--border-size);
+  border-radius: 4px;
+  opacity: 0.2;
+  border-radius: 4px;
+  // -webkit-filter: blur(50px);
+  filter: blur(50px);
+}
+
+.article {
+  margin-left: 1.7rem;
+
+  span {
+    color: var(--back-color);
+    font-family: Montserrat;
+    font-size: 0.875rem;
+    font-weight: bold;  
+    opacity: 0.5;
+  }
+
+  h2 {
+    color: var(--back-color);
+    height: 1.813rem;
+    margin-top: 0.188rem;
+    font-family: RobotoSlab;
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: -0.2px;
+  }
+
+  p {
+
+    // margin: 9.313rem 0 0 4.938rem;
+    // padding: 10.563rem 8.688rem 20.625rem 1.313rem;
+    opacity: 0.2;
+    // border-radius: 4px;
+    // -webkit-filter: blur(50px);
+    // filter: blur(50px);
+    color: var(--blue-blur);
+    font-family: RobotoSlab;
+    font-size: 0.875rem;
+    font-weight: 300;
+  }
+
+  ul {
+    @include d-flex(flex-start);
+  }
+
+  li {
+    list-style: none;
+
+    button  {
+      border: none;
+      outline: none;
+      background-color: transparent;
+      padding-right: 0.9rem;
+    //   margin: 0.188rem 0.938rem 0.125rem 0;
+      font-family: RobotoSlab;
+      font-size: 0.875rem;
+      font-weight: 300;
+      color: var(--blue-blur);
+      height: 1.188rem;
+    }
+
+    &:nth-child(2) button {
+      padding-left: 0.9rem;
+      border-left: var(--border-size);
+      border-right: var(--border-size);
+    }
+
+    &:nth-child(3) button {
+      padding-left: 0.9rem;
+    }
+  }
+}
+
+.pourcentage {
+    @include d-flex(center);
+
+  .loading {
+    width: 4.25rem;
+    height: 4.25rem;;
+    margin: 0 1.3rem;
+    color: #379cf6;
+  }
+
+  span {
+    font-size: 2rem;
+    color: var(--back-color);
+    font-family: Montserrat;
+  }
+
+  p {
+    font-size: 0.875rem;
+    color: var(--back-color);
+    opacity: 0.5;
+    font-family: Montserrat;
+  }
+}
+
+.update {
+  button {
+    // width: 11.5rem;
+    // height: 2.063rem;
+    font-size: 0.8rem;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    color: var(--white-backg);
+    letter-spacing: 0.5px;
+    background-color: var(--blue-color);
+    padding: 0.5rem 1.375rem;
+    border-radius: 3px;
+    text-align: center;
+    transition: all 0.5 ease;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+  }
+}

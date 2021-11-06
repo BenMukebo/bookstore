@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { AiOutlineLoading3Quarters as Loading } from 'react-icons/ai';
 import { useDispatch } from 'react-redux';
 import { removeBook } from '../redux/books/books';
+import styles from './scss/Book.module.scss';
 
 const Book = ({
   id, title, author, genre, completed,
@@ -12,18 +13,9 @@ const Book = ({
     dispatch(removeBook(id));
   };
   return (
-    <section style={{
-      width: '100%',
-      height: '17rem',
-      display: 'flex',
-      justifyContent: 'space-around',
-      alignItems: 'center',
-      background: '#ffff',
-      margin: '0.5rem',
-    }}
-    >
-      <div>
-        <span style={{ color: '#121212' }}>{genre}</span>
+    <section className={styles.bookSection}>
+      <div className={styles.article}>
+        <span>{genre}</span>
         <h2>{title}</h2>
         <p>{author}</p>
         <ul>
@@ -32,8 +24,8 @@ const Book = ({
           <li><button type="button">Edit</button></li>
         </ul>
       </div>
-      <div>
-        <Loading />
+      <div className={styles.pourcentage}>
+        <Loading className={styles.pourcentage} />
         <div>
           <span>
             {completed}
@@ -42,7 +34,7 @@ const Book = ({
           <span>completed</span>
         </div>
       </div>
-      <div>
+      <div className={styles.updata}>
         <button type="button">update progress</button>
       </div>
     </section>
