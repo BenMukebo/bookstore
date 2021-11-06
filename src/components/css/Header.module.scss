@@ -14,7 +14,6 @@
 
 .nav {
   @include d-flex(space-between);
-  background-color: red;
   
   h1 {
     font-size: 1.9rem;
