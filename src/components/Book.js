@@ -25,16 +25,16 @@ const Book = ({
         </ul>
       </div>
       <div className={styles.pourcentage}>
-        <Loading className={styles.pourcentage} />
+        <Loading className={styles.loading} />
         <div>
           <span>
             {completed}
             %
           </span>
-          <span>completed</span>
+          <p>completed</p>
         </div>
       </div>
-      <div className={styles.updata}>
+      <div className={styles.update}>
         <button type="button">update progress</button>
       </div>
     </section>
