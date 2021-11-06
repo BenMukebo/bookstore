@@ -29,8 +29,7 @@
   }
 
   p {
-    // width: 85.063rem;
-    // height: 63.313rem;
+
     // margin: 9.313rem 0 0 4.938rem;
     // padding: 10.563rem 8.688rem 20.625rem 1.313rem;
     opacity: 0.2;
@@ -72,5 +71,37 @@
     &:nth-child(3) button {
         padding-left: 0.9rem;
       }
+  }
+}
+
+.pourcentage {
+    @include d-flex(center);
+  .loading {
+    width: 4.25rem;
+    height: 4.25rem;;
+    margin: 0 1.3rem;
+    // color: var(--);
+   
+    // medium-blue
+    // color: #307bbe;
+    // dodger-blue
+    color: #379cf6;
+    
+  }
+
+  .percent {
+    
+  }
+  span {
+    font-size: 2rem;
+    color: var(--back-color);
+    font-family: Montserrat;
+  }
+
+  p {
+    font-size: 0.875rem;
+    color: var(--back-color);
+    opacity: 0.5;
+    font-family: Montserrat;
   }
 }
