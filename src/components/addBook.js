@@ -12,7 +12,7 @@ const AddBook = () => {
   const dispatch = useDispatch();
 
   const addNewBook = () => {
-    if (!title || !author || !genre) return;
+    if (!title || !genre) return;
     const newBook = {
       category: genre,
       title,
@@ -45,16 +45,16 @@ const AddBook = () => {
           onChange={(e) => setAuthor(e.target.value)}
           value={author}
           required
+          style={{ dispaly: 'none' }}
         />
-        <input list="category" placeholder="Catery" onChange={(e) => setGenre(e.target.value)} />
-        <datalist id="category">
-          <option hidden value=""> Category </option>
+        <select name="genre" value={genre} onChange={(e) => setGenre(e.target.value)}>
+          <option hidden value="category"> Category </option>
           <option value="Action">Action</option>
           <option value="Science Fiction">Science Fiction</option>
-          <option value="Economy" selected disabled hidden style={{ color: '#c4c4c4' }}>Economy</option>
+          <option value="Economy">Economy</option>
           <option value="Comedy">Comedy</option>
           <option value="Drama">Drama</option>
-        </datalist>
+        </select>
         <button type="button" value="ADD BOOK" onClick={addNewBook}>
           Add Book
         </button>

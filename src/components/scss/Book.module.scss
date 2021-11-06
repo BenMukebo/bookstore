@@ -81,8 +81,14 @@
   }
 }
 
+article {
+  @include d-flex(center);
+  flex: 1;
+}
 .pourcentage {
     @include d-flex(center);
+    padding-right: 5.75rem;
+    border-right: var(--border-size);
 
   .loading {
     width: 4.25rem;
@@ -109,6 +115,7 @@
   button {
     // width: 11.5rem;
     // height: 2.063rem;
+    margin-left: 1.125rem;
     font-size: 0.8rem;
     font-weight: 300;
     letter-spacing: 0.5px;

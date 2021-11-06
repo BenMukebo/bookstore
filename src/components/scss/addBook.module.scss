@@ -57,13 +57,9 @@
     @extend input;
     background-color: transparent;
 
-    #select {
-      color: red;
+    option {
+      color: var(--white-backg) !important;
     }
-  }
-
-  option {
-    color: #c4c4c4 !important;
   }
 
   button {
