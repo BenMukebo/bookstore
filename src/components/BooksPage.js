@@ -1,13 +1,17 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import Book from './Book';
-import AddBook from './addBook';
+import AddBook from './AddBook';
 
 function BooksPage() {
   const books = useSelector((state) => state.booksReducer);
 
   return (
-    <div style={{ background: '#f5f6fa' }}>
+    <div style={{
+      backgroundColor: '#fafafa;',
+      padding: '0 5%',
+    }}
+    >
       <ul>
         {books.map((book) => (
           <Book

@@ -2,6 +2,7 @@
 
 .header {
   @include d-flex(space-between);
+
   height: 5.8rem;
   // width: 90%;
   // padding: 0 6.2rem;
@@ -14,7 +15,7 @@
 
 .nav {
   @include d-flex(space-between);
-  
+
   h1 {
     font-size: 1.9rem;
     color: var(--blue-color);
@@ -23,13 +24,14 @@
 
   .items {
     @include d-flex(center);
+
     list-style-type: none;
   }
 
-  li{
+  li {
     padding: 1.2rem;
     margin: 0 2px;
-  
+
     .itemLink {
       font-size: 0.8rem;
       letter-spacing: 1.9px;
@@ -52,7 +54,7 @@
   // box-shadow: 0 0 0 1px rgb(91, 158, 245, 0.3);
   transition: box-shadow 120ms;
   cursor: pointer;
-  
+
   .user {
     color: var(--blue-color);
   }

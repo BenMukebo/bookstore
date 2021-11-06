@@ -28,8 +28,9 @@
 
 .form {
   @include d-flex(space-between);
+  flex-wrap: wrap;
   width: 100%;
-  padding: 1.2rem 0;
+  padding: 1rem 0;
   margin-bottom: 5rem;
 
   input {
@@ -37,6 +38,7 @@
     outline: none;
     border: var(--border-size);
     padding: 0.4rem 0.7rem;
+    margin: calc(0.2rem + 0.3rem) 0;
 
     &::placeholder{
       color: #c4c4c4;
@@ -61,6 +63,25 @@
   }
 
   option {
-    // color: #c4c4c4 !important;
-
+    color: #c4c4c4 !important;
   }
+
+  button {
+    letter-spacing: 0.5px;
+    color: var(--white-backg);
+    background-color: var(--blue-color);
+    // margin: 1.188rem 2.125rem;
+    padding: 0.8rem 1.375rem;
+    font-size: 0.8;
+    font-weight: bold;
+    border-radius: 3px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    transition: all 0.5 ease;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+  }
+}

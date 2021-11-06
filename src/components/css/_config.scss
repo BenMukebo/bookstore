@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-//   font-family: $font-stack;
+  //   font-family: $font-stack;
 }
 
 :root {
@@ -13,7 +13,7 @@
   --size-small: 0.85rem;
   --border-size: 1px solid #e8e8e8;
 }
-  
+
 @mixin d-flex($position) {
   display: flex;
   align-items: center;

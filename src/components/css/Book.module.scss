@@ -2,10 +2,11 @@
 
 .section {
   @include d-flex(space-between);
+
   background-color: var(--white-backg);
   height: 10.6rem;
   margin: 0.5rem auto;
-//   background-color: aqua;
+  //   background-color: aqua;
 }
 
 .article {
@@ -13,7 +14,7 @@
     color: var(--back-color);
     font-family: Montserrat;
     font-size: 0.875rem;
-    font-weight: bold;  
+    font-weight: bold;
     opacity: 0.5;
   }
 
@@ -49,12 +50,12 @@
   li {
     list-style: none;
 
-    button  {
+    button {
       border: none;
       outline: none;
       background-color: transparent;
       padding-right: 0.9rem;
-    //   margin: 0.188rem 0.938rem 0.125rem 0;
+      //   margin: 0.188rem 0.938rem 0.125rem 0;
       font-family: RobotoSlab;
       font-size: 0.875rem;
       font-weight: 300;
@@ -69,29 +70,30 @@
     }
 
     &:nth-child(3) button {
-        padding-left: 0.9rem;
-      }
+      padding-left: 0.9rem;
+    }
   }
 }
 
 .pourcentage {
-    @include d-flex(center);
+  @include d-flex(center);
+
   .loading {
     width: 4.25rem;
-    height: 4.25rem;;
+    height: 4.25rem;
     margin: 0 1.3rem;
     // color: var(--);
-   
+
     // medium-blue
     // color: #307bbe;
     // dodger-blue
     color: #379cf6;
-    
   }
 
   .percent {
-    
+
   }
+
   span {
     font-size: 2rem;
     color: var(--back-color);
