@@ -1,27 +1,19 @@
-:root {
-  --white-backg: #fff;
-  --blue-color: #0290ff;
-  --back-color: #121212;
-  --size-small: 0.85rem;
-}
-
-@mixin d-flex($position) {
-  display: flex;
-  align-items: center;
-  justify-content: $position;
-}
-
+@import 'config';
 
 .header {
-  width: 100%;
-  // background-color: var(--white-backg);
-  @include d-flex(space-around);
+  @include d-flex(space-between);
+  // width: 90%;
+  // padding: 0 6.2rem;
+  padding: 0 5%;
+  background-color: var(--white-backg);
+  margin: 0 auto 1.8rem;
 
-  background-color: #ccc;
+  // background-color: #ccc;
 }
 
 .nav {
   @include d-flex(space-around);
+  padding: 0 1rem;
 
   h1 {
     font-size: 1.9rem;
@@ -44,4 +36,27 @@
       text-decoration: none;
     }
   }
+}
+
+.icon {
+  // margin-right: 1rem;
+  width: 2.8rem;
+  height: 2.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  border: var(--border-size);
+  border-radius: 50%;
+  // box-shadow: 0 0 0 1px rgb(91, 158, 245, 0.3);
+  transition: box-shadow 120ms;
+  cursor: pointer;
+  
+  .user {
+    color: var(--blue-color);
+  }
+}
+
+.icon:hover {
+  // box-shadow: 0 0 0 2px rgb(91, 158, 245, 0.3);
 }
